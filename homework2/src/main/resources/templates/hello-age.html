@@ -1,0 +1,16 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Hello with age validation</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+<body>
+	<h1>Result</h1>
+    <div th:if="${age} &gt; 17">
+        <p th:text="'Welcome ' + ${name} + '!'">Welcome!</p>    
+    </div>
+    <div th:if="${age} &lt; 18">
+        <p>You are too young!</p>
+    </div>
+</body>
+</html>
